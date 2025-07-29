@@ -4,32 +4,32 @@ const VideoGallery = () => {
   // Sample videos - replace with your actual YouTube video IDs
   const videos = [
     {
-      id: "dQw4w9WgXcQ", // Replace with your video ID
+      id: "qkrfKML79Y0",
       title: "AI Landscape Journey",
       description: "A breathtaking journey through AI-generated landscapes using Google Veo3, showcasing the evolution of digital environments."
     },
     {
-      id: "dQw4w9WgXcQ", // Replace with your video ID
+      id: "DSEc7Zn4xl8",
       title: "Character Stories",
       description: "Compelling character narratives brought to life with advanced AI video generation techniques and creative storytelling."
     },
     {
-      id: "dQw4w9WgXcQ", // Replace with your video ID
+      id: "5DPwEmsZ74M",
       title: "Abstract Visions",
       description: "Experimental abstract visuals pushing the boundaries of what's possible with AI-powered video creation."
     },
     {
-      id: "dQw4w9WgXcQ", // Replace with your video ID
+      id: "1raDfjOpik4",
       title: "Future Cityscapes",
       description: "Imagining tomorrow's urban environments through the lens of cutting-edge AI video synthesis technology."
     },
     {
-      id: "dQw4w9WgXcQ", // Replace with your video ID
+      id: "f9eaWBCz2bM",
       title: "Nature's AI Canvas",
       description: "Exploring natural phenomena recreated and reimagined using Google Veo3's powerful generation capabilities."
     },
     {
-      id: "dQw4w9WgXcQ", // Replace with your video ID
+      id: "dTOP_X5fgbs",
       title: "Motion Experiments",
       description: "Dynamic experiments in movement and flow, demonstrating the fluid capabilities of AI video generation."
     }
