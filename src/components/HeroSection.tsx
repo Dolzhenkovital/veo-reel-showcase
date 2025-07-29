@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/hero-video-bg.jpg";
+import heroVideo from "@/assets/hero-video-bg.webm";
 
 const HeroSection = () => {
   const scrollToVideos = () => {
@@ -18,10 +18,15 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      ></div>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-30"
+      >
+        <source src={heroVideo} type="video/webm" />
+      </video>
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/20"></div>
       
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
