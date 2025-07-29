@@ -11,17 +11,22 @@ const AboutSection = () => {
               About My Work
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              I'm passionate about exploring the intersection of artificial intelligence and creative expression. 
-              Using Google Veo3, I create compelling video content that pushes the boundaries of what's possible 
-              in AI-generated media.
+              I'm passionate about exploring the intersection of artificial intelligence and creative storytelling. 
+              Leveraging advanced AI tools, I produce compelling video content that expands the possibilities of digital media.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Each video is a carefully crafted experiment in digital storytelling, combining innovative prompting 
-              techniques with artistic vision to create unique visual experiences that wouldn't be possible through 
-              traditional means.
+              Each project is a thoughtfully designed exploration of digital storytelling, blending innovative prompting 
+              techniques with artistic vision. This approach enables me to independently create high-quality digital content 
+              quickly and cost-effectively—achieving results that would typically require extensive resources and specialized 
+              teams through traditional production methods.
             </p>
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-              Get In Touch
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-8 py-4"
+              onClick={() => window.open('https://www.linkedin.com/in/vitaliydolzhenko/', '_blank')}
+            >
+              Connect on LinkedIn
             </Button>
           </div>
 
