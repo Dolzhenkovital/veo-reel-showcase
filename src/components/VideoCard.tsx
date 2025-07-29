@@ -7,8 +7,15 @@ interface VideoCardProps {
 }
 
 const VideoCard = ({ videoId, title, description }: VideoCardProps) => {
+  const openYouTubeVideo = () => {
+    window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
+  };
+
   return (
-    <Card className="group overflow-hidden bg-card border-border hover:shadow-card transition-all duration-300 hover:scale-105">
+    <Card 
+      className="group overflow-hidden bg-card border-border hover:shadow-card transition-all duration-300 hover:scale-105 cursor-pointer" 
+      onClick={openYouTubeVideo}
+    >
       <div className="relative aspect-video overflow-hidden">
         <iframe
           src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1`}

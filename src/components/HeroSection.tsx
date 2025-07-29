@@ -2,6 +2,20 @@ import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
+  const scrollToVideos = () => {
+    const videoSection = document.querySelector('[data-section="videos"]');
+    if (videoSection) {
+      videoSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToAbout = () => {
+    const aboutSection = document.querySelector('[data-section="about"]');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
       <div 
@@ -22,10 +36,10 @@ const HeroSection = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+          <Button variant="hero" size="lg" className="text-lg px-8 py-4" onClick={scrollToVideos}>
             Watch My Videos
           </Button>
-          <Button variant="outline" size="lg" className="text-lg px-8 py-4">
+          <Button variant="outline" size="lg" className="text-lg px-8 py-4" onClick={scrollToAbout}>
             Learn More
           </Button>
         </div>

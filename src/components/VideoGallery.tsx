@@ -36,7 +36,7 @@ const VideoGallery = () => {
   ];
 
   return (
-    <section className="py-20 px-6">
+    <section className="py-20 px-6" data-section="videos">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary-glow bg-clip-text text-transparent">

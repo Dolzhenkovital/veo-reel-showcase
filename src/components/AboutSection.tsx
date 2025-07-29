@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 px-6 bg-gradient-to-br from-background via-card to-background">
+    <section className="py-20 px-6 bg-gradient-to-br from-background via-card to-background" data-section="about">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
