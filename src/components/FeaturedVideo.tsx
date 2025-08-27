@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 
 const FeaturedVideo = () => {
   const featuredVideo = {
-    id: "qkrfKML79Y0",
+    id: "cBA60fRkOzU",
     title: "AI Landscape Journey",
     description: "A breathtaking journey through AI-generated landscapes using Google Veo3, showcasing the evolution of digital environments."
   };
