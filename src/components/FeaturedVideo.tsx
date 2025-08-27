@@ -4,7 +4,7 @@ const FeaturedVideo = () => {
   const featuredVideo = {
     id: "cBA60fRkOzU",
     title: "AI Landscape Journey",
-    description: "A breathtaking journey through AI-generated landscapes using Google Veo3, showcasing the evolution of digital environments."
+    description: "Unlimited flight of fancy with the power of AI."
   };
 
   const openYouTubeVideo = () => {
