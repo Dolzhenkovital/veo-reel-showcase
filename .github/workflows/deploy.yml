@@ -23,29 +23,28 @@ jobs:
 
       - name: Build (if Node project)
         if: ${{ hashFiles('package.json') != '' }}
-        run: npm run build
+        run: npm run build --if-present
 
       # Визначаємо, що саме вантажити: dist/ або build/ або out/ або корінь
       - name: Decide upload dir
         id: pick
         run: |
-          if [ -d dist ]; then echo "dir=dist" >> $GITHUB_OUTPUT
-          elif [ -d build ]; then echo "dir=build" >> $GITHUB_OUTPUT
-          elif [ -d out ]; then echo "dir=out" >> $GITHUB_OUTPUT
-          else echo "dir=." >> $GITHUB_OUTPUT
+          if [ -d dist ]; then echo "dir=dist/" >> $GITHUB_OUTPUT
+          elif [ -d build ]; then echo "dir=build/" >> $GITHUB_OUTPUT
+          elif [ -d out ]; then echo "dir=out/" >> $GITHUB_OUTPUT
+          else echo "dir=./" >> $GITHUB_OUTPUT
           fi
 
       - name: Upload via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           port: 21
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
-          local-dir: ${{ steps.pick.outputs.dir }}
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}   # приклад: htdocs/
+          local-dir: ${{ steps.pick.outputs.dir }}    # вже зі слешем
           exclude: |
             **/.git**
             **/.github/**
